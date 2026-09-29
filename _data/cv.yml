@@ -53,43 +53,66 @@ contact:
 
 # ---------- Research page ----------
 
-working_papers:
-  - title: "Title of Working Paper One"
-    authors: "with Coauthor Name"
-    note: "Revise and resubmit, <em>Journal Name</em>"
-    links:
-      - { label: PDF, url: /assets/papers/working-paper-1.pdf }
-  - title: "Title of Working Paper Two"
-    note: "Draft available on request"
-
 publications:
-  - heading: Books
-    items:
-      - "<em>Title of Your Book</em>. Example University Press, forthcoming 2027."
-  - heading: Journal articles
-    items:
-      - "“Article Title One.” <em>Journal of Example History</em> 12, no. 3 (2025): 101–130. <a href=\"https://doi.org/10.0000/xxxx\">DOI</a>"
-      - "“Article Title Two.” <em>Isis</em> 115, no. 1 (2024): 45–68."
-  - heading: Book chapters
-    items:
-      - "“Chapter Title.” In <em>Edited Volume Title</em>, edited by Editor Name, 55–80. Publisher, 2023."
-  - heading: Public writing
-    items:
-      - "“A Short Essay for a General Audience.” <em>Aeon</em>, 2024."
+  - title: "Economic assessment of the role of nuclear and renewables in future decarbonized electricity markets"
+    authors: "with Arjen Veenstra and Machiel Mulder"
+    journal: "The Energy Journal"
+    year: "2026"
+    link: https://doi.org/10.1177/01956574261450943
+  - title: "Promoting hydrogen through supporting consumers or producers? An international welfare economic analysis"
+    authors: "with Machiel Mulder"
+    journal: "Climate Policy"
+    year: "2026"
+    link: https://doi.org/10.1080/14693062.2026.2654964
+  - title: "A wind tunnel test of wind farm auctions"
+    authors: "with Marco Haan, Sander Onderstal, and Jasper Veldman"
+    journal: "Energy Economics"
+    year: "2025"
+    link: https://doi.org/10.1016/j.eneco.2025.108984
+  - title: "Sharing the fame but taking the blame: When declaring a single person responsible solves a free rider problem"
+    authors: "with Wendelin Schnedler"
+    journal: "Management Science"
+    year: "2025"
+    link: https://doi.org/10.1287/mnsc.2024.06567
+  - title: "Economic feasibility of green hydrogen in providing flexibility to medium-voltage distribution grids in the presence of local-heat systems"
+    authors: "with Sina Ghaemi and Machiel Mulder"
+    journal: "Applied Energy"
+    year: "2022"
+    link: https://www.sciencedirect.com/science/article/pii/S0306261922016658
+  - title: "Does vertical integration increase product quality?"
+    authors: "with Sanxi Li and Zhan Qu"
+    journal: "Economic Theory Bulletin"
+    year: "2022"
+    link: https://doi.org/10.1007/s40505-022-00240-4
+  - title: "Value of power-to-gas as a flexibility option in integrated electricity and hydrogen markets"
+    authors: "with Machiel Mulder"
+    journal: "Applied Energy"
+    year: "2021"
+    link: https://www.sciencedirect.com/science/article/pii/S0306261921011855
+  - title: "Patients' free choice of physicians is not always good"
+    authors: "with Christian Waibel"
+    journal: "Health Economics"
+    year: "2021"
+    link: https://doi.org/10.1002/hec.4407
+  - title: "Rivalry information acquisition and disclosure"
+    authors: "with Ronald Peeters"
+    journal: "Journal of Economics & Management Strategy"
+    year: "2017"
+    link: https://doi.org/10.1111/jems.12198
+  - title: "Cheap talk with multiple strategically interacting audiences: An experimental study"
+    authors: "with Ronald Peeters"
+    journal: "PLoS ONE"
+    year: "2016"
+    link: https://doi.org/10.1371/journal.pone.0163783
 
-grants:
-  - year: 2025–2027
-    name: "Example Research Council Early Career Grant (PI), “Project Title”"
-  - year: "2024"
-    name: Example Book Manuscript Workshop Grant
-  - year: "2020"
-    name: Dissertation Fellowship, Example Foundation
+working_papers:
+  - title: "Economic value of flexibility provided by power to gas conversion systems in low-voltage distribution grids"
+    authors: "with Sina Ghaemi and Machiel Mulder"
+  - title: "Antitrust sanctions against individuals"
 
-# Datasets, digital projects, software, archives you've built. Delete if not relevant.
-projects:
-  - name: Example Digital Archive
-    description: "A searchable collection of digitized colonial survey reports."
-    url: https://example.com
+work_in_progress:
+  - title: "Bundling in maintenance contracts"
+    authors: "with Marco Haan and Jasper Veldman"
 
 # ---------- Supervision page ----------
 
@@ -110,11 +133,25 @@ students:
 # ---------- Teaching page ----------
 
 teaching:
-  - heading: Example University
+  - heading: Graduate Courses
     items:
-      - "HIST 101: Introduction to World History (Fall 2024, Fall 2025)"
-      - "HIST 340: Science and Empire (Spring 2025)"
-      - "HIST 590: Graduate Seminar in the History of Knowledge (Spring 2026)"
-  - heading: Another Institute
+      - "Behavioral Economics for Management, Paderborn University (Lecturer), 2016–2017"
+      - "Topics in Economics and Management, Paderborn University (Lecturer), 2015–2017"
+      - "Advanced Management, Paderborn University (Tutor), 2015"
+      - "Finding Your Research Topics, Paderborn University (Lecturer), 2014–2016"
+      - "Theories of Behavioural Economics, Paderborn University (Lecturer), 2014"
+      - "Strategic Management, Paderborn University (Tutor), 2014"
+      - "International Finance, Peking University (Teaching Assistant), 2008"
+      - "Business Mathematics, Peking University (Teaching Assistant), 2008"
+      - "Open Macroeconomics, Peking University (Teaching Assistant), 2007"
+  - heading: Undergraduate Courses
     items:
-      - "Global History of Science (2022)"
+      - "Behavioral Corporate Finance, University of Groningen (Tutor), 2021"
+      - "Microeconomics, Maastricht University (Tutor), 2013"
+      - "Economy Game, Maastricht University (Tutor), 2013"
+      - "Behavioural Economics, Maastricht University (Tutor), 2011–2013"
+      - "International Competition Policy, Maastricht University (Tutor), 2011–2012"
+      - "Economics and Business, Maastricht University (Tutor), 2010"
+      - "International Trade, Peking University (Teaching Assistant), 2007"
+      - "Macroeconomics, Peking University (Teaching Assistant), 2007"
+      - "New Institutional Economics, Peking University (Teaching Assistant), 2006"
