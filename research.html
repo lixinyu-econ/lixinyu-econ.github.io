@@ -1,0 +1,57 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+{% assign cv = site.data.cv %}
+
+<h1>Research</h1>
+<p class="jump">
+  {% if cv.working_papers %}<a href="#working-papers">Working papers</a>{% endif %}
+  {% if cv.publications %}<a href="#publications">Publications</a>{% endif %}
+  {% if cv.grants %}<a href="#grants">Grants</a>{% endif %}
+  {% if cv.projects %}<a href="#projects">Projects</a>{% endif %}
+</p>
+
+{% if cv.working_papers %}
+<section id="working-papers">
+  <h2>Working papers</h2>
+  <ol class="papers">
+    {% for p in cv.working_papers %}
+    <li>
+      <span class="paper-title">{{ p.title }}</span>{% if p.authors %}, {{ p.authors }}{% endif %}
+      {% if p.note %}<br><span class="note">{{ p.note }}</span>{% endif %}
+      {% if p.links %}<span class="paper-links">{% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if cv.publications %}
+<section id="publications">
+  <h2>Publications</h2>
+  {% for group in cv.publications %}
+    <h3>{{ group.heading }}</h3>
+    <ul class="pubs">{% for p in group.items %}<li>{{ p }}</li>{% endfor %}</ul>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if cv.grants %}
+<section id="grants">
+  <h2>Grants &amp; awards</h2>
+  <dl class="timeline">
+    {% for g in cv.grants %}<dt>{{ g.year }}</dt><dd>{{ g.name }}</dd>{% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+{% if cv.projects %}
+<section id="projects">
+  <h2>Projects &amp; data</h2>
+  <ul class="plain">
+    {% for p in cv.projects %}<li>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}{% if p.description %}: {{ p.description }}{% endif %}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}

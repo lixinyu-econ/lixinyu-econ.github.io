@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{% assign cv = site.data.cv %}
+
+<section class="intro">
+  {% if site.photo %}<img class="photo" src="{{ site.photo | relative_url }}" alt="Photo of {{ site.author }}">{% endif %}
+  <div class="intro-text">
+    <h1>{{ site.author }}</h1>
+    <p class="position">{{ site.position }}<br>{{ site.affiliation }}</p>
+    <p class="links">
+      {% if site.links.cv_pdf != "" %}<a href="{{ site.links.cv_pdf | relative_url }}">CV</a>{% endif %}
+      <a href="mailto:{{ site.email }}">Email</a>
+      {% if site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}">Google Scholar</a>{% endif %}
+      {% if site.links.orcid != "" %}<a href="{{ site.links.orcid }}">ORCID</a>{% endif %}
+      {% if site.links.arxiv != "" %}<a href="{{ site.links.arxiv }}">arXiv</a>{% endif %}
+      {% if site.links.ssrn != "" %}<a href="{{ site.links.ssrn }}">SSRN</a>{% endif %}
+      {% if site.links.github != "" %}<a href="{{ site.links.github }}">GitHub</a>{% endif %}
+      {% if site.links.bluesky != "" %}<a href="{{ site.links.bluesky }}">Bluesky</a>{% endif %}
+      {% if site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}">LinkedIn</a>{% endif %}
+    </p>
+  </div>
+</section>
+
+<div class="bio">{{ cv.bio | markdownify }}</div>
+
+{% if cv.research_interests %}
+<section>
+  <h2>Research interests</h2>
+  <ul class="tags">{% for i in cv.research_interests %}<li>{{ i }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if cv.roles %}
+<section>
+  <h2>Editorial &amp; service</h2>
+  <ul class="plain">{% for r in cv.roles %}<li>{{ r }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if cv.appointments %}
+<section>
+  <h2>Appointments</h2>
+  <dl class="timeline">
+    {% for a in cv.appointments %}<dt>{{ a.years }}</dt><dd><strong>{{ a.title }}</strong>, {{ a.place }}</dd>{% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+{% if cv.education %}
+<section>
+  <h2>Education</h2>
+  <dl class="timeline">
+    {% for e in cv.education %}<dt>{{ e.years }}</dt><dd><strong>{{ e.degree }}</strong>, {{ e.place }}{% if e.note %}<br><span class="note">{{ e.note }}</span>{% endif %}</dd>{% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+<section>
+  <h2>Contact</h2>
+  <dl class="timeline">
+    <dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+    {% for c in cv.contact %}<dt>{{ c.label }}</dt><dd>{{ c.lines | join: '<br>' }}</dd>{% endfor %}
+  </dl>
+</section>
+
+{% if site.posts.size > 0 %}
+<section>
+  <h2>Recent posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit: 3 %}
+    <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>
+</section>
+{% endif %}

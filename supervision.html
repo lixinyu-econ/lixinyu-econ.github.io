@@ -1,0 +1,16 @@
+---
+layout: default
+title: Supervision
+permalink: /supervision/
+---
+{% assign cv = site.data.cv %}
+
+<h1>Supervision</h1>
+{% if cv.supervision_intro %}<div class="lede-block">{{ cv.supervision_intro | markdownify }}</div>{% endif %}
+
+{% for group in cv.students %}
+<section>
+  <h2>{{ group.heading }}</h2>
+  <ul class="plain">{% for s in group.items %}<li>{{ s }}</li>{% endfor %}</ul>
+</section>
+{% endfor %}

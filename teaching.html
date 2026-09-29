@@ -1,0 +1,15 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+---
+{% assign cv = site.data.cv %}
+
+<h1>Teaching</h1>
+
+{% for group in cv.teaching %}
+<section>
+  <h2>{{ group.heading }}</h2>
+  <ul class="plain">{% for t in group.items %}<li>{{ t }}</li>{% endfor %}</ul>
+</section>
+{% endfor %}

@@ -1,0 +1,40 @@
+# ---- Site settings: edit these ----
+title: Your Name
+author: Your Name
+description: Assistant Professor of History at Example University. Research on science, empire, and knowledge in the modern world.
+email: you@university.edu
+position: Assistant Professor of History
+affiliation: Example University
+location: City, Country
+
+# Your headshot. Replace assets/photo.svg with your own photo
+# (e.g. upload assets/photo.jpg and change this line to /assets/photo.jpg).
+photo: /assets/photo.svg
+
+# Profile links (leave blank to hide)
+links:
+  cv_pdf: /assets/cv.pdf          # upload your CV PDF to assets/cv.pdf
+  google_scholar: https://scholar.google.com/citations?user=XXXX
+  orcid: https://orcid.org/0000-0000-0000-0000
+  github: https://github.com/yourusername
+  arxiv: ""
+  ssrn: ""
+  bluesky: ""
+  linkedin: ""
+
+# URL settings
+# For a user site (yourusername.github.io) leave baseurl empty.
+# For a project site (yourusername.github.io/repo-name) set baseurl: /repo-name
+url: https://yourusername.github.io
+baseurl: ""
+
+# ---- Build settings (no need to change) ----
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
