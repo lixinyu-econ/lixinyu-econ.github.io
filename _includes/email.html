@@ -1,0 +1,5 @@
+{%- comment -%}
+Shows your email as "name `at` university `dot` edu" so spam bots can't collect it.
+The address comes from "email:" in _config.yml. Use it with {% include email.html %}
+{%- endcomment -%}
+<span class="email">{{ site.email | replace: "@", " <code>at</code> " | replace: ".", " <code>dot</code> " }}</span>

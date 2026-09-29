@@ -1,0 +1,120 @@
+# Edit this file to update the content of your site.
+# Delete any section you don't need; it will disappear from the page.
+# Text inside quotes can include simple HTML, like <em>italics</em> or <a href="...">links</a>.
+
+# ---------- Home page ----------
+
+bio: >
+  I am an Assistant Professor of History at Example University. My research
+  examines how scientific knowledge was produced, circulated, and contested
+  across colonial networks in the nineteenth and twentieth centuries.
+  My first book, *Title of Your Book*, is forthcoming with Example University Press.
+
+  I received my PhD from Example Graduate University in 2021 and was a
+  postdoctoral fellow at Another Institute before joining Example University.
+
+research_interests:
+  - History of science and technology
+  - Empire and colonialism
+  - Global and transnational history
+  - Knowledge, archives, and translation
+
+# Editorial boards, service roles, etc.
+roles:
+  - "Associate Editor, <em>Journal of Example History</em> (2025–)"
+  - "Book Review Editor, <em>Example Review</em> (2024–)"
+
+appointments:
+  - years: 2023–present
+    title: Assistant Professor of History
+    place: Example University
+  - years: 2021–2023
+    title: Postdoctoral Fellow
+    place: Another Institute
+
+education:
+  - years: "2021"
+    degree: PhD, History
+    place: Example Graduate University
+  - years: "2014"
+    degree: BA, History and Philosophy
+    place: Example College
+
+# One entry per office/campus. Each line of "lines" is a line of the address.
+contact:
+  - label: Office
+    lines:
+      - Room 123, Example Hall
+      - Example University
+      - City, Postcode, Country
+  - label: Phone
+    lines:
+      - "+00 1234 5678"
+
+# ---------- Research page ----------
+
+working_papers:
+  - title: "Title of Working Paper One"
+    authors: "with Coauthor Name"
+    note: "Revise and resubmit, <em>Journal Name</em>"
+    links:
+      - { label: PDF, url: /assets/papers/working-paper-1.pdf }
+  - title: "Title of Working Paper Two"
+    note: "Draft available on request"
+
+publications:
+  - heading: Books
+    items:
+      - "<em>Title of Your Book</em>. Example University Press, forthcoming 2027."
+  - heading: Journal articles
+    items:
+      - "“Article Title One.” <em>Journal of Example History</em> 12, no. 3 (2025): 101–130. <a href=\"https://doi.org/10.0000/xxxx\">DOI</a>"
+      - "“Article Title Two.” <em>Isis</em> 115, no. 1 (2024): 45–68."
+  - heading: Book chapters
+    items:
+      - "“Chapter Title.” In <em>Edited Volume Title</em>, edited by Editor Name, 55–80. Publisher, 2023."
+  - heading: Public writing
+    items:
+      - "“A Short Essay for a General Audience.” <em>Aeon</em>, 2024."
+
+grants:
+  - year: 2025–2027
+    name: "Example Research Council Early Career Grant (PI), “Project Title”"
+  - year: "2024"
+    name: Example Book Manuscript Workshop Grant
+  - year: "2020"
+    name: Dissertation Fellowship, Example Foundation
+
+# Datasets, digital projects, software, archives you've built. Delete if not relevant.
+projects:
+  - name: Example Digital Archive
+    description: "A searchable collection of digitized colonial survey reports."
+    url: https://example.com
+
+# ---------- Supervision page ----------
+
+supervision_intro: >
+  I welcome inquiries from prospective PhD and MA students interested in the
+  history of science, empire, and global history. Please email me with a short
+  description of your interests and a writing sample.
+
+students:
+  - heading: Current PhD students
+    items:
+      - "Student Name (2024–), dissertation on topic"
+      - "Student Name (2023–), dissertation on topic"
+  - heading: Former students
+    items:
+      - "Student Name (PhD 2025), now Assistant Professor at Example College"
+
+# ---------- Teaching page ----------
+
+teaching:
+  - heading: Example University
+    items:
+      - "HIST 101: Introduction to World History (Fall 2024, Fall 2025)"
+      - "HIST 340: Science and Empire (Spring 2025)"
+      - "HIST 590: Graduate Seminar in the History of Knowledge (Spring 2026)"
+  - heading: Another Institute
+    items:
+      - "Global History of Science (2022)"

@@ -1,0 +1,15 @@
+# The menu at the top of every page. Add, remove or reorder items here.
+# "url" is the page address; the matching file is noted beside each one.
+
+- title: Home
+  url: /                  # index.html
+- title: Research
+  url: /research/         # research.html
+- title: Supervision
+  url: /supervision/      # supervision.html
+- title: Teaching
+  url: /teaching/         # teaching.html
+- title: Blog
+  url: /blog/             # blog/index.html
+- title: 中文
+  url: /zh/               # zh/index.md  (delete this item if you don't want a Chinese page)
