@@ -13,10 +13,10 @@ photo: /assets/photo.jpg
 
 # Profile links (leave blank to hide)
 links:
-  cv_pdf: /assets/cv.pdf          # upload your CV PDF to assets/cv.pdf
+  cv_pdf: ""     # to turn it on, replace the quotation with /assets/cv.pdf     # upload your CV PDF to assets/cv.pdf
   google_scholar: https://scholar.google.com/citations?user=TAvHvVgAAAAJ&hl=en
   orcid: https://orcid.org/0000-0000-0000-0000
-  github: https://github.com/lixinyu-econ
+  github: ""
   arxiv: ""
   ssrn: ""
   bluesky: ""
