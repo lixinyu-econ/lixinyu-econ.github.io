@@ -5,51 +5,45 @@
 # ---------- Home page ----------
 
 bio: >
-  I am an Assistant Professor of History at Example University. My research
-  examines how scientific knowledge was produced, circulated, and contested
-  across colonial networks in the nineteenth and twentieth centuries.
-  My first book, *Title of Your Book*, is forthcoming with Example University Press.
-
-  I received my PhD from Example Graduate University in 2021 and was a
-  postdoctoral fellow at Another Institute before joining Example University.
+  I am a researcher at the PBL Netherlands Environmental Assessment Agency, where my work focuses on climate and energy economics, industrial organization theory, and behavioral and experimental economics, with a particular emphasis on Computable General Equilibrium (CGE) modeling. I hold an MSc in economics from Peking University and the Toulouse School of Economics, and a PhD in economics from Maastricht University.
 
 research_interests:
-  - History of science and technology
-  - Empire and colonialism
-  - Global and transnational history
-  - Knowledge, archives, and translation
-
-# Editorial boards, service roles, etc.
-roles:
-  - "Associate Editor, <em>Journal of Example History</em> (2025–)"
-  - "Book Review Editor, <em>Example Review</em> (2024–)"
+  - Energy economics 
+  - Circular economy
+  - Industrial organization theory
+  - Behavioral and experimental economics
 
 appointments:
-  - years: 2023–present
-    title: Assistant Professor of History
-    place: Example University
-  - years: 2021–2023
-    title: Postdoctoral Fellow
-    place: Another Institute
+  - years: 2022–present
+    title: Researcher
+    place: PBL Netherlands Environmental Assessment Agency
+  - years: 2018–2022
+    title: Postdoctoral researcher
+    place: Groningen University
+  - years: 2014–2018
+    title: Postdoctoral researcher
+    place: Paderborn University
 
 education:
-  - years: "2021"
-    degree: PhD, History
-    place: Example Graduate University
   - years: "2014"
-    degree: BA, History and Philosophy
-    place: Example College
+    degree: PhD, Economics
+    place: Maastricht University
+  - years: "2010"
+    degree: MSc, Economics
+    place: Toulouse School of Economics
+  - years: "2008"
+    degree: MA, Economics
+    place: CCER, Peking University
+  - years: "2005"
+    degree: BA, Economics
+    place: Zhengzhou University
 
 # One entry per office/campus. Each line of "lines" is a line of the address.
 contact:
   - label: Office
     lines:
-      - Room 123, Example Hall
-      - Example University
-      - City, Postcode, Country
-  - label: Phone
-    lines:
-      - "+00 1234 5678"
+      - PBL
+      - The Hague, The Netherlands
 
 # ---------- Research page ----------
 
