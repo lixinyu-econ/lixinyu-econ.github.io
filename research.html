@@ -1,33 +1,74 @@
---- layout: default title: Research permalink: /research/ --- {% assign cv = site.data.cv %}
-Research
-{% if cv.publications %}Publications{% endif %} {% if cv.working_papers %}Working papers{% endif %} {% if cv.work_in_progress %}Work in progress{% endif %} {% if cv.grants %}Grants{% endif %} {% if cv.projects %}Projects{% endif %}
+---
+layout: default
+title: Research
+permalink: /research/
+---
+{% assign cv = site.data.cv %}
+
+<h1>Research</h1>
+<p class="jump">
+  {% if cv.publications %}<a href="#publications">Publications</a>{% endif %}
+  {% if cv.working_papers %}<a href="#working-papers">Working papers</a>{% endif %}
+  {% if cv.work_in_progress %}<a href="#work-in-progress">Work in progress</a>{% endif %}
+  {% if cv.grants %}<a href="#grants">Grants</a>{% endif %}
+  {% if cv.projects %}<a href="#projects">Projects</a>{% endif %}
+</p>
 
 {% if cv.publications %}
-Publications
-{% for p in cv.publications %}
-{{ p.title }}{% if p.authors %} ({{ p.authors }}){% endif %}
-{{ p.journal }}{% if p.year %}, {{ p.year }}{% endif %} {% if p.link %}Link{% endif %}
-{% endfor %}
-{% endif %} {% if cv.working_papers %}
-Working papers
-{% for p in cv.working_papers %}
-{{ p.title }}{% if p.authors %} ({{ p.authors }}){% endif %} {% if p.note %}
-{{ p.note }}{% endif %} {% if p.links %}{% for l in p.links %}{{ l.label }}{% endfor %}{% endif %}
-{% endfor %}
-{% endif %} {% if cv.work_in_progress %}
-Work in progress
-{% for p in cv.work_in_progress %}
-{{ p.title }}{% if p.authors %} ({{ p.authors }}){% endif %}
-{% endfor %}
-{% endif %} {% if cv.grants %}
-Grants & awards
-{% for g in cv.grants %}
-{{ g.year }}
-{{ g.name }}
-{% endfor %}
-{% endif %} {% if cv.projects %}
-Projects & data
-{% for p in cv.projects %}
-{% if p.url %}{{ p.name }}{% else %}{{ p.name }}{% endif %}{% if p.description %}: {{ p.description }}{% endif %}
-{% endfor %}
+<section id="publications">
+  <h2>Publications</h2>
+  <ol class="papers">
+    {% for p in cv.publications %}
+    <li>
+      <span class="paper-title">{{ p.title }}</span>{% if p.authors %} ({{ p.authors }}){% endif %}
+      <br><span class="note"><em>{{ p.journal }}</em>{% if p.year %}, {{ p.year }}{% endif %}</span>
+      {% if p.link %}<span class="paper-links"><a href="{{ p.link }}">Link</a></span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if cv.working_papers %}
+<section id="working-papers">
+  <h2>Working papers</h2>
+  <ol class="papers">
+    {% for p in cv.working_papers %}
+    <li>
+      <span class="paper-title">{{ p.title }}</span>{% if p.authors %} ({{ p.authors }}){% endif %}
+      {% if p.note %}<br><span class="note">{{ p.note }}</span>{% endif %}
+      {% if p.links %}<span class="paper-links">{% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if cv.work_in_progress %}
+<section id="work-in-progress">
+  <h2>Work in progress</h2>
+  <ol class="papers">
+    {% for p in cv.work_in_progress %}
+    <li><span class="paper-title">{{ p.title }}</span>{% if p.authors %} ({{ p.authors }}){% endif %}</li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if cv.grants %}
+<section id="grants">
+  <h2>Grants &amp; awards</h2>
+  <dl class="timeline">
+    {% for g in cv.grants %}<dt>{{ g.year }}</dt><dd>{{ g.name }}</dd>{% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+{% if cv.projects %}
+<section id="projects">
+  <h2>Projects &amp; data</h2>
+  <ul class="plain">
+    {% for p in cv.projects %}<li>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}{% if p.description %}: {{ p.description }}{% endif %}</li>{% endfor %}
+  </ul>
+</section>
 {% endif %}
